@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+</head>
+<body>
+<h1 id="header1"></h1>
+
+<script>
+    const header1 = document.getElementById('header1');
+
+    fetch('http://localhost:8080').then((res) => {
+        return res.text();
+    })
+    .then((text) => {
+        header1.innerHTML = text + " (js new)";
+    })
+    .catch((err) => {
+        console.error(err);
+    })
+</script>
+</body>
+</html>
