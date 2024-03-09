@@ -35,7 +35,7 @@ public final class BluetoothHandler {
         }
 
         Thread thread = new Thread(() -> {
-            args.addFirst("../../python/BluetoothCLI.py");
+            args.addFirst("./python/BluetoothCLI.py");
             args.addFirst("python3");
             ProcessBuilder processBuilder = new ProcessBuilder(args);
 
@@ -67,7 +67,7 @@ public final class BluetoothHandler {
             this.busy = true;
         }
 
-        args.addFirst("../../python/BluetoothCLI.py");
+        args.addFirst("./python/BluetoothCLI.py");
         args.addFirst("python3");
         ProcessBuilder processBuilder = new ProcessBuilder(args);
         List<String> answer = new ArrayList<>();

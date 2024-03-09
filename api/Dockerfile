@@ -6,11 +6,13 @@ COPY mvnw.cmd .
 COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
-RUN ./mvnw clean package
-RUN apt-get update && \
-    apt-get install -y bluez libbluetooth3-dev python3 \
-RUN pip install pyserial
-# RUN ./mvnw package
+COPY python python
 
-#COPY ./target/*.jar app.jar
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip bluez libbluetooth3-dev
+
+RUN pip3 install pyserial
+
+RUN ./mvnw clean package
+
 ENTRYPOINT ["java", "-jar", "./target/app-v1.jar"]

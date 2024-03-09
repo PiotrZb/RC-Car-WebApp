@@ -4,7 +4,7 @@ services:
   db:
     image: mysql:latest
     container_name: rc-car-app-mysql
-    restart: always
+    restart: no
     ports:
       - "3306:3306"
     environment:
@@ -20,7 +20,7 @@ services:
   api:
     build: ./api
     container_name: rc-car-app-api
-    restart: always
+    restart: no
     ports:
       - "8080:8080"
     depends_on:
@@ -36,6 +36,8 @@ services:
 #    volumes:
 #      - /var/run/dbus/:/var/run/dbus/:z
     network_mode: "host"
+    volumes:
+      - /dev:/dev
 
   phpmyadmin:
     image: phpmyadmin:latest
@@ -48,6 +50,7 @@ services:
       - db
     expose:
       - 80
+    restart: no
 
 volumes:
   mysql-data:
