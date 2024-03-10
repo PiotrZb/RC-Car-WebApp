@@ -1,0 +1,70 @@
+/* Movement controlls */
+#mainContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#directionControlls {
+  position: relative;
+  top: 130px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 300px;
+}
+
+.arrowBtn {
+  position: absolute;
+  width: 80px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  background-color:azure;
+  border-width: 5px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.arrowBtn img {
+  width: 100%;
+}
+
+#directionControlls .arrowBtn:nth-child(1) { rotate: 0deg; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(2) { rotate: 45deg; transform-origin: 150px; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(3) { rotate: 90deg; transform-origin: 150px; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(4) { rotate: 135deg; transform-origin: 150px; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(5) { rotate: 180deg; transform-origin: 150px; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(6) { rotate: 225deg; transform-origin: 150px; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(7) { rotate: 270deg; transform-origin: 150px; translate: -75px;}
+#directionControlls .arrowBtn:nth-child(8) { rotate: 315deg; transform-origin: 150px; translate: -75px;}
+
+#directionControlls .arrowBtn:nth-child(1) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(2) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(3) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(4) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(5) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(6) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(7) img { rotate: -90deg; }
+#directionControlls .arrowBtn:nth-child(8) img { rotate: -90deg; }
+
+/* Special controlls */
+
+.soundBtn {
+  position: absolute;
+  width: 80px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  background-color:azure;
+  border-width: 5px;
+  box-shadow: 5px 5px 15px black;
+  translate: 35px;
+}
+
+.soundBtn img {
+  width: 100%;
+}

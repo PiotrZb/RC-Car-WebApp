@@ -1,0 +1,98 @@
+/* ----------------------------- Direction controlls ----------------------------- */
+
+
+
+.imgBtn {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px hsl(0, 0%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .imgBtn img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: center;
+    transform: rotate(-0deg);
+  }
+  
+  #directionControlls {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #directionControlls .imgBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  #directionControlls .imgBtn:nth-child(1) { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+  #directionControlls .imgBtn:nth-child(2) { transform: rotate(45deg) translateX(100px) rotate(-45deg); }
+  #directionControlls .imgBtn:nth-child(3) { transform: rotate(90deg) translateX(100px) rotate(-90deg); }
+  #directionControlls .imgBtn:nth-child(4) { transform: rotate(135deg) translateX(100px) rotate(-135deg); }
+  #directionControlls .imgBtn:nth-child(5) { transform: rotate(180deg) translateX(100px) rotate(-180deg); }
+  #directionControlls .imgBtn:nth-child(6) { transform: rotate(225deg) translateX(100px) rotate(-225deg); }
+  #directionControlls .imgBtn:nth-child(7) { transform: rotate(270deg) translateX(100px) rotate(-270deg); }
+  #directionControlls .imgBtn:nth-child(8) { transform: rotate(315deg) translateX(100px) rotate(-315deg); }
+  
+  #directionControlls .imgBtn:nth-child(1) img { transform: rotate(90deg); }
+  #directionControlls .imgBtn:nth-child(2) img { transform: rotate(135deg); }
+  #directionControlls .imgBtn:nth-child(3) img { transform: rotate(180deg); }
+  #directionControlls .imgBtn:nth-child(4) img { transform: rotate(225deg); }
+  #directionControlls .imgBtn:nth-child(5) img { transform: rotate(270deg); }
+  #directionControlls .imgBtn:nth-child(6) img { transform: rotate(315deg); }
+  #directionControlls .imgBtn:nth-child(7) img { transform: rotate(0deg); }
+  #directionControlls .imgBtn:nth-child(8) img { transform: rotate(45deg); }
+  
+  
+  
+  /* ----------------------------- Connection controlls ----------------------------- */
+  
+  
+  
+  #connectionControlls {
+    display: inline-block;
+    border-color: black;
+    border-width: 3px;
+  }
+  
+  .diode {
+    fill: red;
+  }
+  
+  .diode[data-status="on"] {
+    fill: green;
+  }
+  
+  
+  /* ----------------------------- Speed controlls ----------------------------- */
+  
+  
+  
+  #speedControlls {
+  
+  }
+  
+  
+  
+  /* ----------------------------- Special controlls ----------------------------- */
+  
+  
+  
+  #specialControlls {
+  
+  }
